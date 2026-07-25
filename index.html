@@ -3,10 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuadros subrealistas</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Onírica - Galería de Arte Surrealista</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Cuadros subrealistas</h1>
+    <!-- Fondo Animado de Partículas Nebulosas en CSS -->
+    <div class="surreal-bg">
+        <div class="nebula-drop drop-1"></div>
+        <div class="nebula-drop drop-2"></div>
+        <div class="nebula-drop drop-3"></div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo">ONÍRICA</div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#manifiesto">Manifiesto</a>
+            <a href="#coleccion">Colección</a>
+            <a href="#adquisicion" class="btn-nav">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">El Arte que Desafía a la <span class="text-gradient">Realidad</span></h1>
+            <p class="hero-subtitle">Explora lienzos nacidos del subconsciente puro. Obras surrealistas exclusivas creadas para distorsionar la lógica y transformar espacios ordinarios en portales oníricos.</p>
+            <a href="#coleccion" class="btn-primary">Ver Obras</a>
+        </div>
+        <div class="hero-image-container">
+            <div class="floating-art">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=600&auto=format&fit=crop" alt="Cuadro Surrealista Principal">
+                <div class="art-glow"></div>
+                <div class="art-frame-effect"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Manifiesto -->
+    <section id="manifiesto" class="manifesto">
+        <div class="manifesto-box">
+            <h2>El Manifiesto del Subconsciente</h2>
+            <p>"La realidad es una mera sugerencia. Nuestras piezas no decoran paredes; suspenden las leyes de la física, liberan los sueños atrapados en el óleo y permiten que el espectador converse con su propia sombra."</p>
+        </div>
+    </section>
+
+    <!-- Sección Galería / Colección -->
+    <section id="coleccion" class="gallery-section">
+        <h2 class="section-title">La Colección Onírica</h2>
+        <div class="gallery-grid">
+            <!-- Cuadro 1 -->
+            <div class="art-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=600&auto=format&fit=crop" alt="Líquido Cristalino">
+                </div>
+                <div class="card-info">
+                    <h3>Líquido Cristalino</h3>
+                    <p>Óleo sobre lienzo — 120 × 100 cm</p>
+                    <span class="status-available">Disponible para Adquisición</span>
+                </div>
+            </div>
+            <!-- Cuadro 2 -->
+            <div class="art-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop" alt="Memoria Eléctrica">
+                </div>
+                <div class="card-info">
+                    <h3>Memoria Eléctrica</h3>
+                    <p>Técnica mixta — 150 × 120 cm</p>
+                    <span class="status-available">Disponible para Adquisición</span>
+                </div>
+            </div>
+            <!-- Cuadro 3 -->
+            <div class="art-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?q=80&w=600&auto=format&fit=crop" alt="El Susurro del Ojo">
+                </div>
+                <div class="card-info">
+                    <h3>El Susurro del Ojo</h3>
+                    <p>Óleo sobre lienzo — 100 × 100 cm</p>
+                    <span class="status-sold">Colección Privada</span>
+                </div>
+            </div>
+            <!-- Cuadro 4 -->
+            <div class="art-card">
+                <div class="card-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?q=80&w=600&auto=format&fit=crop" alt="Vuelo Suspendido">
+                </div>
+                <div class="card-info">
+                    <h3>Vuelo Suspendido</h3>
+                    <p>Acrílico y pan de oro — 140 × 90 cm</p>
+                    <span class="status-available">Disponible para Adquisición</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto e Interacción WhatsApp -->
+    <section id="adquisicion" class="contact-section">
+        <div class="contact-wrapper">
+            <h2>Adquiere una Obra Exclusiva</h2>
+            <p>No creemos en pasarelas de pago impersonales para el arte verdadero. Cada pieza surrealista merece un diálogo único. Si deseas consultar el valor de una obra disponible o solicitar una pieza por encargo directo, pulsa el botón inferior para comunicarte de forma privada con nuestro taller de arte vía WhatsApp.</p>
+            
+            <a href="https://wa.me/593987794119?text=Hola%2C%20estoy%20interesado%20en%20conocer%20los%20detalles%20y%20la%20disponibilidad%20de%20tus%20cuadros%20surrealistas." target="_blank" class="btn-whatsapp">
+                <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 11.948.01c3.174.001 6.157 1.237 8.401 3.484 2.246 2.248 3.48 5.233 3.48 8.409-.003 6.549-5.342 11.887-11.896 11.887-.2.001-.4.001-.6-.001-2.015-.001-3.986-.543-5.739-1.567L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.451 5.405 0 9.801-4.393 9.804-9.799.002-2.618-1.017-5.08-2.87-6.934C16.398 1.916 13.934.897 11.317.897c-5.404 0-9.802 4.394-9.806 9.801 0 1.646.476 3.219 1.38 4.599l-.998 3.645 3.734-.979zm11.235-5.362c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                </svg>
+                Conversar con el Artista
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="main-footer">
+        <p>&copy; 2026 ONÍRICA Galería de Arte. Todos los derechos reservados. Rompiendo los límites de la percepción convencional.</p>
+    </footer>
 </body>
 </html>
